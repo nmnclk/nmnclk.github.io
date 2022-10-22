@@ -3,7 +3,9 @@ function hesapla() {
     var name1 = document.getElementById("name1").value;
     var name2 = document.getElementById("name2").value;
 
-
+    name1=name1.toLowerCase();
+    name2=name2.toLowerCase();
+    console.log(name1);
     nameArr = (name1 + name2).split("");
     nameArr2 = (name1 + name2).split("");
     var countArr = [];
