@@ -388,6 +388,10 @@ body {
     color: var(--rose-primary);
 }
 
+.upload-card h4 {
+    font-family: 'Playfair Display', serif;
+}
+
 .upload-note {
     margin-top: 1rem;
 }
