@@ -245,12 +245,17 @@ body {
     font-weight: 700;
     color: var(--rose-primary);
     margin-bottom: 0.5rem;
+    word-wrap: break-word;
+    hyphens: auto;
+    overflow-wrap: break-word;
 }
 
 .stat-label {
     font-size: 1.1rem;
     color: var(--gray-dark);
     margin: 0;
+    word-wrap: break-word;
+    hyphens: auto;
 }
 
 /* Details Section */
@@ -433,6 +438,20 @@ body {
 
     .stat-card {
         margin-bottom: 1rem;
+        padding: 1.5rem 1rem;
+    }
+
+    .stat-number {
+        font-size: 2.2rem;
+    }
+
+    .stat-label {
+        font-size: 0.95rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+        line-height: 1.7;
     }
 
     .detail-card {
@@ -453,29 +472,141 @@ body {
 
 @media (max-width: 480px) {
     .couple-names {
-        font-size: 2rem;
-    }
-
-    .wedding-date {
-        font-size: 1.2rem;
-    }
-
-    .hero-subtitle {
-        font-size: 1rem;
-    }
-
-    .section-title {
         font-size: 1.8rem;
     }
 
+    .wedding-date {
+        font-size: 1.1rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+        padding: 0 1rem;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
     .navbar-brand {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+    }
+
+    .stat-card {
+        padding: 1.2rem 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
+    }
+
+    .stat-label {
+        font-size: 0.85rem;
+    }
+
+    .about-text {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        padding: 0 0.5rem;
+    }
+
+    .about-title {
+        font-size: 1.6rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+        padding: 0 1rem;
     }
 
     .invitation-actions .btn {
         display: block;
         width: 100%;
         margin-bottom: 1rem;
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+    }
+
+    .detail-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .detail-card h4 {
+        font-size: 1.3rem;
+    }
+
+    .detail-text {
+        font-size: 1rem;
+    }
+}
+
+/* Extra small screens - WhatsApp web view */
+@media (max-width: 400px) {
+    .couple-names {
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
+
+    .wedding-date {
+        font-size: 1rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+        padding: 0 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.4rem;
+    }
+
+    .stat-card {
+        padding: 1rem 0.6rem;
+    }
+
+    .stat-number {
+        font-size: 1.3rem;
+        line-height: 1.1;
+        max-width: 100%;
+        text-align: center;
+        word-spacing: -2px;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+        line-height: 1.2;
+        margin-top: 0.3rem;
+    }
+
+    .about-text {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        padding: 0 0.3rem;
+    }
+
+    .about-title {
+        font-size: 1.4rem;
+    }
+
+    .detail-card {
+        padding: 1.2rem 0.8rem;
+    }
+
+    .detail-card h4 {
+        font-size: 1.2rem;
+    }
+
+    .detail-text {
+        font-size: 0.95rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .brand-text {
+        font-size: 0.9rem;
     }
 }
 
