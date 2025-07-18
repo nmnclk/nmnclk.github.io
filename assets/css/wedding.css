@@ -90,54 +90,24 @@ body {
     color: var(--rose-primary) !important;
 }
 
-/* Türk Motifi Stilleri */
-.turk-motif-nav {
-    height: 30px;
+/* Navbar Motif */
+.navbar-motif-fixed {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+}
+
+.navbar-motif-img {
+    height: 76px;
     width: auto;
-    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2));
-    transition: transform 0.3s ease;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
 }
 
-.turk-motif-nav:hover {
-    transform: scale(1.1);
-}
-
-.turk-motif-hero {
-    height: 80px;
-    width: auto;
-    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
-    opacity: 0.9;
-    animation: motifGlow 4s ease-in-out infinite;
-}
-
-@keyframes motifGlow {
-
-    0%,
-    100% {
-        filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
-        transform: scale(1);
-    }
-
-    50% {
-        filter: drop-shadow(4px 4px 8px rgba(255, 215, 0, 0.4));
-        transform: scale(1.05);
-    }
-}
-
-.hero-motif {
-    animation: fadeInDown 1.5s ease-out;
-}
-
-@keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.navbar-motif-img:hover {
+    opacity: 1;
 }
 
 /* Hero Section */
@@ -190,6 +160,34 @@ body {
     font-size: 2rem;
     font-weight: 400;
     color: var(--gold);
+}
+
+/* Hero Motif */
+.hero-motif {
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-motif-img {
+    height: 90px;
+    width: auto;
+    opacity: 0.9;
+    filter: brightness(0) invert(1);
+    animation: motifGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes motifGlow {
+    0% {
+        opacity: 0.7;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
 }
 
 .hero-subtitle {
@@ -635,6 +633,16 @@ body {
         padding: 0 0.3rem;
     }
 
+    /* Navbar motif responsive */
+    .navbar-motif-img {
+        height: 60px;
+    }
+
+    /* Hero motif responsive */
+    .hero-motif-img {
+        height: 60px;
+    }
+
     .about-title {
         font-size: 1.4rem;
     }
@@ -682,4 +690,15 @@ body {
 .scroll-animate.animate {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Extra small screens */
+@media (max-width: 375px) {
+    .navbar-motif-img {
+        height: 50px;
+    }
+
+    .hero-motif-img {
+        height: 50px;
+    }
 }
