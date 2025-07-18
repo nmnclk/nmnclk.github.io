@@ -1,99 +1,330 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/images/gidon_app_logo_48.png">
-
-    <title>Gidon Apps</title>
-
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <title>Nursena & Numan - Düğünümüze Hoş Geldiniz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link href="assets/css/wedding.css" rel="stylesheet">
 </head>
 
 <body>
-
-    <body>
-        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-            <div class="col-md-5 p-lg-5 mx-auto my-5">
-                <img src="assets/images/gidon_app_logo_500.png"style="width: 25%;" alt="">
-                <h1 class="display-4 font-weight-normal text-primary">Gidon Apps</h1>
-                <p class="lead font-weight-normal text-primary">Best apps for you!!</p>
-                <a  href="https://play.google.com/store/apps/developer?id=Gidon+Apps"
-                    target="blank"><img style=" height:65px;" src="assets/images/google-play-badge.png"></a>
-            </div>
-            <div class="product-device box-shadow d-none d-md-block"></div>
-            <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
-        </div>
-
-        <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-            <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-                <div class="my-3 py-3">
-                    <h2 class="display-5">Fake App</h2>
-                    <p class="lead">Make a fake screenshot and HAVE FUN</p>
-                </div>
-                <a target="blank" href="https://play.google.com/store/apps/details?id=com.nmnclk.fake_app">
-                    <img style=" height:45px;" src="assets/images/google-play-badge.png">
-                </a>
-                <div class="bg-light box-shadow mx-auto"
-                    style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;background-image: url('assets/images/fakeapp.png');background-repeat: no-repeat;background-size: cover;">
-                </div>
-            </div>
-            <div class="bg-secondary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-                <div class="my-3 p-3">
-                    <h2 class="display-5">Usta Şoför</h2>
-                    <p class="lead">Ehliyet sınaı çıkmış sorular ile deneme sınavı <br>(Only Turkey)</p>
-                </div>
-                <a target="blank" href="https://play.google.com/store/apps/details?id=com.nmnclk.usta_sofor">
-                    <img style=" height:45px;" src="assets/images/google-play-badge.png">
-                </a>
-                <div class="bg-dark box-shadow mx-auto"
-                    style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;background-image: url('assets/images/ustasofor.png');background-repeat: no-repeat;background-size: cover;">
-
-                </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top wedding-nav">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-heart text-rose"></i>
+                <span class="ms-2 brand-text">Düğünümüz</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#details">Düğün Detayları</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#invitation">Davetiye</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#photos">Fotoğraflar</a>
+                    </li>
+                </ul>
             </div>
         </div>
+    </nav>
 
-
-
-        <footer class="container pt-5">
-            <div class="row">
-                <div class="col-12 col-md">
-                    <img src="assets/images/gidon_app_logo_48.png" alt="">
-                    <h5>Numan Çalık</h5>
-                    <h6>numancalik42@gmail.com</h6>
-                    <small class="d-block mb-3 text-muted">&copy; 2019-2022</small>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-10">
+                    <div class="hero-content">
+                        <h1 class="hero-title mb-4">
+                            <span class="couple-names">Nursena & Numan</span>
+                            <br>
+                            <small class="wedding-date">Düğünümüze Hoş Geldiniz</small>
+                        </h1>
+                        <p class="hero-subtitle mb-5">
+                            Hayatımızın en özel gününü sizlerle paylaşmaktan mutluluk duyuyoruz
+                        </p>
+                        <div class="hero-hearts">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-6 col-md">
-                    <a href="https://twitter.com/nmnclk" class="fa fa-twitter" target="blank"></a>
-                    <a href="https://instagram.com/numancalik" class="fa fa-instagram" target="blank"></a>
-
-                </div>
-
             </div>
-        </footer>
-        <footer class="container ">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
             <div class="row">
-                <div class="col-12 col-md">
-                    <img src="assets/images/gidon_app_logo_48.png" alt="">
-                    <h5>Gidon Apps</h5>
-                    <h6>gidonapps@gmail.com</h6>
-                    <small class="d-block mb-3 text-muted">&copy; 2019-2022</small>
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Bizim Hikayemiz</h2>
+                    <div class="section-divider"></div>
                 </div>
-                <div class="col-6 col-md">
-                    <a href="https://twitter.com/appsgidon" class="fa fa-twitter" target="blank"></a>
-                    <a href="https://instagram.com/gidon_apps" class="fa fa-instagram" target="blank"></a>
-
-                </div>
-
             </div>
-        </footer>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4">
+                    <div class="couple-photo-container">
+                        <img src="assets/images/couple-photo.jpeg" alt="Çift Fotoğrafı"
+                            class="couple-photo img-fluid rounded-3 shadow">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h3 class="about-title mb-4">Aşkımızın Başlangıcı</h3>
+                        <p class="about-text mb-4">
+                            Kaderimiz, 2023 yılının sıcak bir temmuz gününde, 17'sinde kesişti. Nursena, stajyer olarak
+                            Numan'ın iş yerine geldiğinde, hiçbirimiz o anın hayatımızı sonsuza dek değiştireceğini
+                            bilmiyorduk. İlk başta sadece meslektaştık, ama zamanla birbirimizi tanıdıkça, aramızda özel
+                            bir bağ kurulduğunu fark ettik.
+                        </p>
+                        <p class="about-text mb-4">
+                            İki ay boyunca büyüyen bu güzel duyguları artık saklayamayacağımız 2 Eylül 2023 tarihinde,
+                            cesaret edip sevgili olduk. O günden itibaren her anımız daha anlamlı, her gülüşümüz daha
+                            değerli oldu. Birlikte geçirdiğimiz her gün, aşkımızın ne kadar gerçek ve derin olduğunu
+                            gösterdi.
+                        </p>
+                        <p class="about-text mb-4">
+                            2024 yılının kasım ayında, tam 23'ünde, Numan en büyük cesaretini göstererek Nursena'ya
+                            evlilik teklif etti. "Evet" cevabıyla birlikte hayallerimiz gerçek olmaya başladı. Ve 4 Ocak
+                            2025'te ailelerimizin huzurunda isteme ve nişan töreniyle birlikteliğimizi resmileştirdik.
+                            Şimdi ise hayatımızın en güzel gününe, düğünümüze hazırlanıyoruz...
+                        </p>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="stat-card text-center">
+                                    <h4 class="stat-number">2</h4>
+                                    <p class="stat-label">Yıl Birlikte</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="stat-card text-center">
+                                    <h4 class="stat-number">∞</h4>
+                                    <p class="stat-label">Sonsuza Dek</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <div class="family-info text-center">
+                        <h4 class="mb-4">Ailelerimiz</h4>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="family-card">
+                                    <h5 class="text-rose">Kılınç Ailesi</h5>
+                                    <p class="mb-1"><strong>Nursena</strong></p>
+                                    <p class="text-muted">Firdes & Mustafa Erdal</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="family-card">
+                                    <h5 class="text-rose">Çalık Ailesi</h5>
+                                    <p class="mb-1"><strong>Numan</strong></p>
+                                    <p class="text-muted">Ayşe & Hasan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <a href="love_test.html">Scrips</a>
-        <script src="assets/js/bootstrap.min.js"></script>
-    </body>
+    <!-- Wedding Details Section -->
+    <section id="details" class="details-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Düğün Detayları</h2>
+                    <div class="section-divider"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="detail-card text-center">
+                        <div class="detail-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h4>Tarih</h4>
+                        <p class="detail-text">2 Eylül 2025<br>Salı</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="detail-card text-center">
+                        <div class="detail-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>Saat</h4>
+                        <p class="detail-text">Kına: 19:30<br>Düğün: 20:30</p>
+                    </div>
+                </div>
+                <div class="col-lg-12 mb-4">
+                    <div class="detail-card text-center">
+                        <div class="detail-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Konum</h4>
+                        <p class="detail-text">
+                            New Karaman Otel<br>
+                            Gelin alma saat 18:00'da başlayacaktır<br>
+                            <a href="https://maps.google.com/?q=New+Karaman+Otel" target="_blank"
+                                class="btn btn-outline-rose mt-3">
+                                <i class="fas fa-directions"></i> Yol Tarifi Al
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Invitation Section -->
+    <section id="invitation" class="invitation-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Davetiyemiz</h2>
+                    <div class="section-divider"></div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="invitation-card">
+                        <div class="invitation-image-container">
+                            <img src="assets/images/invitation.jpeg" alt="Davetiye"
+                                class="invitation-image img-fluid rounded-3 shadow">
+                        </div>
+                        <div class="invitation-actions mt-4 text-center">
+                            <a href="assets/images/invitation.jpeg" download="nursena-numan-davetiye.jpeg"
+                                class="btn btn-rose btn-lg me-3">
+                                <i class="fas fa-download me-2"></i>
+                                Davetiyeyi İndir
+                            </a>
+                            <a href="assets/images/invitation.jpeg" target="_blank" class="btn btn-outline-rose btn-lg">
+                                <i class="fas fa-eye me-2"></i>
+                                Büyük Görüntüle
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Upload Section -->
+    <section id="photos" class="photos-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Fotoğraflarınızı Paylaşın</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">
+                        Düğünümüzde çektiğiniz güzel anıları bizimle paylaşın!
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="upload-card text-center">
+                        <div class="upload-icon mb-4">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </div>
+                        <h4 class="mb-3">Fotoğraflarınızı Yükleyin</h4>
+                        <p class="mb-4">
+                            Düğünümüzde çektiğiniz fotoğrafları aşağıdaki bağlantı üzerinden yükleyebilirsiniz.
+                            Tüm fotoğraflar özel albümümüzde toplanacak.
+                        </p>
+                        <a href="https://www.dropbox.com/request/gUedz8DMTlabi472NId8" target="_blank"
+                            class="btn btn-rose btn-lg">
+                            <i class="fab fa-dropbox me-2"></i>
+                            Fotoğraf Yükle
+                        </a>
+                        <div class="upload-note mt-3">
+                            <small class="text-muted">
+                                <i class="fas fa-info-circle me-1"></i>
+                                Dropbox bağlantısı yeni sekmede açılacaktır
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="footer-hearts mb-3">
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <p class="footer-text mb-2">
+                        Bu özel günümüzü bizimle paylaştığınız için teşekkür ederiz
+                    </p>
+                    <p class="footer-love">
+                        Sevgiyle, <span class="couple-signature">Nursena & Numan</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar background change on scroll
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.wedding-nav');
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-scrolled');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+            }
+        });
+
+        // Removed parallax effect to prevent overlay issues
+    </script>
+</body>
 
 </html>
