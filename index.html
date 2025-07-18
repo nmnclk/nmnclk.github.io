@@ -135,7 +135,7 @@
                                 <div class="family-card">
                                     <h5 class="text-rose">Kılınç Ailesi</h5>
                                     <p class="mb-1"><strong>Nursena</strong></p>
-                                    <p class="text-muted">Firdes & Mustafa Erdal</p>
+                                    <p class="text-muted">Firdevs & Mustafa Erdal</p>
                                 </div>
                             </div>
                             <div class="col-md-6 mb-3">
@@ -177,7 +177,7 @@
                             <i class="fas fa-clock"></i>
                         </div>
                         <h4>Saat</h4>
-                        <p class="detail-text">Kına: 19:30<br>Düğün: 20:30</p>
+                        <p class="detail-text">Kına: 19:00<br>Düğün: 20:30</p>
                     </div>
                 </div>
                 <div class="col-lg-12 mb-4">
@@ -351,16 +351,20 @@
             const timeElement = document.getElementById('timeTogetherId');
             const labelElement = document.getElementById('timeLabelId');
 
+            let timeText = '';
+
             if (years > 0) {
-                timeElement.textContent = `${years}y ${months}a ${days}g`;
-                labelElement.textContent = 'Birlikte';
-            } else if (months > 0) {
-                timeElement.textContent = `${months}a ${days}g`;
-                labelElement.textContent = 'Birlikte';
-            } else {
-                timeElement.textContent = `${days}`;
-                labelElement.textContent = 'Gün Birlikte';
+                timeText += `${years} yıl `;
             }
+            if (months > 0) {
+                timeText += `${months} ay `;
+            }
+            if (days > 0) {
+                timeText += `${days} gün`;
+            }
+
+            timeElement.textContent = timeText.trim();
+            labelElement.textContent = 'Birlikte';
         }
 
         // Sayfa yüklendiğinde hesapla
