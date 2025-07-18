@@ -411,27 +411,17 @@
             let timeText = '';
 
             // Küçük ekranlar için daha kısa format
-            if (window.innerWidth <= 400) {
-                if (years > 0) {
-                    timeText += `${years}y `;
-                }
-                if (months > 0) {
-                    timeText += `${months}a `;
-                }
-                if (days > 0) {
-                    timeText += `${days}g`;
-                }
-            } else {
-                if (years > 0) {
-                    timeText += `${years} yıl `;
-                }
-                if (months > 0) {
-                    timeText += `${months} ay `;
-                }
-                if (days > 0) {
-                    timeText += `${days} gün`;
-                }
+
+            if (years > 0) {
+                timeText += `${years} yıl `;
             }
+            if (months > 0) {
+                timeText += `${months} ay `;
+            }
+            if (days > 0) {
+                timeText += `${days} gün`;
+            }
+
 
             timeElement.textContent = timeText.trim();
             labelElement.textContent = 'Birlikte';
