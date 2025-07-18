@@ -90,6 +90,56 @@ body {
     color: var(--rose-primary) !important;
 }
 
+/* Türk Motifi Stilleri */
+.turk-motif-nav {
+    height: 30px;
+    width: auto;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2));
+    transition: transform 0.3s ease;
+}
+
+.turk-motif-nav:hover {
+    transform: scale(1.1);
+}
+
+.turk-motif-hero {
+    height: 80px;
+    width: auto;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+    opacity: 0.9;
+    animation: motifGlow 4s ease-in-out infinite;
+}
+
+@keyframes motifGlow {
+
+    0%,
+    100% {
+        filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+        transform: scale(1);
+    }
+
+    50% {
+        filter: drop-shadow(4px 4px 8px rgba(255, 215, 0, 0.4));
+        transform: scale(1.05);
+    }
+}
+
+.hero-motif {
+    animation: fadeInDown 1.5s ease-out;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Hero Section */
 .hero-section {
     height: 100vh;
