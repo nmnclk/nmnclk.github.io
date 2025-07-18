@@ -112,8 +112,8 @@
                         <div class="row">
                             <div class="col-6">
                                 <div class="stat-card text-center">
-                                    <h4 class="stat-number">2</h4>
-                                    <p class="stat-label">Yıl Birlikte</p>
+                                    <h4 class="stat-number" id="timeTogetherId">2</h4>
+                                    <p class="stat-label" id="timeLabelId">Yıl Birlikte</p>
                                 </div>
                             </div>
                             <div class="col-6">
@@ -324,6 +324,50 @@
         });
 
         // Removed parallax effect to prevent overlay issues
+
+        // İlk tanışma tarihinden itibaren geçen süreyi hesapla
+        function calculateTimeTogether() {
+            const meetingDate = new Date('2023-07-17'); // İlk tanışma tarihi
+            const now = new Date();
+
+            let years = now.getFullYear() - meetingDate.getFullYear();
+            let months = now.getMonth() - meetingDate.getMonth();
+            let days = now.getDate() - meetingDate.getDate();
+
+            // Gün negatifse, bir önceki aydan borç al
+            if (days < 0) {
+                months--;
+                const lastMonth = new Date(now.getFullYear(), now.getMonth(), 0);
+                days += lastMonth.getDate();
+            }
+
+            // Ay negatifse, bir önceki yıldan borç al
+            if (months < 0) {
+                years--;
+                months += 12;
+            }
+
+            // Sonuçları güncelle
+            const timeElement = document.getElementById('timeTogetherId');
+            const labelElement = document.getElementById('timeLabelId');
+
+            if (years > 0) {
+                timeElement.textContent = `${years}y ${months}a ${days}g`;
+                labelElement.textContent = 'Birlikte';
+            } else if (months > 0) {
+                timeElement.textContent = `${months}a ${days}g`;
+                labelElement.textContent = 'Birlikte';
+            } else {
+                timeElement.textContent = `${days}`;
+                labelElement.textContent = 'Gün Birlikte';
+            }
+        }
+
+        // Sayfa yüklendiğinde hesapla
+        calculateTimeTogether();
+
+        // Her gün güncelle (24 saatte bir)
+        setInterval(calculateTimeTogether, 24 * 60 * 60 * 1000);
     </script>
 </body>
 
