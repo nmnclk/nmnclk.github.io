@@ -706,3 +706,63 @@ body {
         height: 50px;
     }
 }
+
+/* Daha kompakt detay kartları için ek stil */
+.compact-detail-card {
+    padding: 1.5rem 1rem;
+    margin-bottom: 1rem;
+    min-height: unset;
+}
+
+.compact-detail-card .detail-icon {
+    font-size: 2rem;
+    margin-bottom: 0.7rem;
+}
+
+.compact-detail-card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.compact-detail-card .detail-text {
+    font-size: 0.98rem;
+    margin-bottom: 0.3rem;
+}
+
+.location-buttons .btn-sm {
+    padding: 0.3rem 0.9rem;
+    font-size: 0.92rem;
+    border-radius: 30px;
+}
+
+@media (max-width: 768px) {
+    .compact-detail-card {
+        padding: 1.1rem 0.7rem;
+        margin-bottom: 0.7rem;
+    }
+
+    .location-buttons .btn-sm {
+        font-size: 0.88rem;
+        padding: 0.3rem 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .compact-detail-card {
+        padding: 0.8rem 0.4rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .compact-detail-card h4 {
+        font-size: 1rem;
+    }
+
+    .compact-detail-card .detail-text {
+        font-size: 0.93rem;
+    }
+
+    .location-buttons .btn-sm {
+        font-size: 0.82rem;
+        padding: 0.25rem 0.5rem;
+    }
+}
